@@ -1,6 +1,33 @@
 # Nova Assistant
 
+![Nova Assistant UI](docs/Screenshot%20(104).png)
+![Nova Assistant UI](docs/Screenshot%20(105).png)
+
+Nova is a voice-first AI assistant...
+
+
+# Nova Assistant
+
 Nova is a voice-first AI assistant web app built with Flask, Gemini, and browser speech features. It offers a modern chat experience with voice input, AI responses, and spoken replies in a polished assistant-style interface.
+
+## Tech Stack
+
+- Python
+- Flask
+- Google Gemini API
+- HTML
+- CSS
+- JavaScript
+
+## Features
+
+- 🎤 Voice input
+- 🤖 Gemini AI responses
+- 🔊 Text-to-speech replies
+- 💬 Modern chat interface
+- 🧠 Conversation memory
+- ✨ Responsive UI
+ 
 
 ## Required software
 
