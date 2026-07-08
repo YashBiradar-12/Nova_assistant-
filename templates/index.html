@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova AI Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <div id="voiceOverlay" class="voice-overlay">
+      <div class="orbital-shell">
+        <div class="voice-orb">
+          <div class="voice-orb-core"></div>
+          <div class="voice-orb-wave wave-one"></div>
+          <div class="voice-orb-wave wave-two"></div>
+          <div class="voice-orb-wave wave-three"></div>
+        </div>
+      </div>
+    </div>
+
+    <main class="shell">
+      <section class="panel hero-panel">
+        <div class="brand-row">
+          <div class="logo">N</div>
+          <div>
+            <h1>Nova Assistant</h1>
+            <p>Modern, intelligent, and beautifully conversational</p>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-copy">
+            <h2>Ask anything. Get a polished response instantly.</h2>
+            <p>
+              This experience blends a sleek web interface with memory, voice-ready replies,
+              and a premium, glassy aesthetic.
+            </p>
+          </div>
+          <div class="chip-row">
+            <span class="chip">⚡ Fast</span>
+            <span class="chip">🧠 Memory</span>
+            <span class="chip">🔊 Voice</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel chat-panel">
+        <div id="chatMessages" class="chat-messages"></div>
+
+        <div class="voice-controls">
+          <button id="voiceButton" class="voice-button" type="button">🎤 Start Voice Mode</button>
+          <p id="voiceStatus" class="voice-status">Say “Nova” or “Nove” to activate listening.</p>
+        </div>
+
+        <form id="chatForm" class="composer">
+          <input id="messageInput" type="text" placeholder="Type your prompt..." autocomplete="off" />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
